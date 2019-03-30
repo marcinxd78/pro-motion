@@ -1,0 +1,101 @@
+{% load static %}
+{% load solo_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta http-equiv="refresh" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'editor.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+   <script src="//responsivevoice.org/responsivevoice/responsivevoice.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Baloo+Thambi&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body >
+
+    {% block body %}<div id="refresh2"></div>{% endblock %}
+
+</body>
+
+<script type='text/javascript'>
+
+setInterval(function(  ) { $('audio')[0].play();
+ audio.autoplay = true;
+ },10000);
+
+</script>
+<script type='text/javascript'>
+  setTimeout(  responsiveVoice.OnVoiceReady = function() {
+
+    responsiveVoice.speak($('#text').text(),  'Polish Male', {
+            pitch: .9,
+        rate: .9,} );
+});
+
+</script>
+<script type='text/javascript'>
+
+
+    var $ = jQuery.noConflict();
+    $('#myCarousel').carousel({
+        pause: 'none',
+        interval: 10000,
+        cycle: true,
+
+    });
+
+
+
+</script>
+<script>
+    var elem = document.documentElement;
+
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+
+</script>
+<script>
+    setInterval(function () {
+        $("#refresh2").load(location.href, "");
+    }, 10000);
+</script>
+
+
+
+
+
+</html>
+

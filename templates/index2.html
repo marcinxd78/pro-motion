@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load solo_tags %}
+
+{% block title %} Promocje {% endblock %}
+
+{% block body %}
+
+
+<div id="myCarousel" class="carousel slide  " data-ride="carousel">
+    {% for prm in promt %}
+
+    {% if forloop.counter == 1 %}
+    <div class="carousel-inner">
+        <div class="carousel-item active  ">
+            {% else %}
+            <div class="carousel-item  ">
+                {% endif %}
+                <div id="prom_grid" class="container-fluid d-flex  ">
+                    <div class="row flex-fill " style="text-align:center">
+                        {%if prm.Type_slide == True %}
+                        <div class="col-lg-6 h-100">
+                            <div class="row h-100 " style="align-content: center">
+                                <div class="col-lg-12 animated bounceInLeft delay-1s">
+                                    <img id="photo2" src="/media/{{prm.Product_img}}" alt=" "></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 h-100">
+                            <div class="row h-70 " style="align-content: center">
+                                <div class="col-lg-12 d-flex justify-content-center animated tada delay-1s">
+                                    <div id="mn_lbl2" style="font-size: 90px"> {{prm.Main_label}}</div>
+                                </div>
+                            </div>
+                            <div class="row h-30 " style="align-content: center">
+
+                                <div class="col-lg-12  justify-content-center  ">
+
+                                    <div class="card text-white bg-dark animated zoomIn delay-1s"
+                                         style="max-width: 60em;">
+
+                                        <div class="card-body">
+
+                                            <h5 id="price2" class="card-title infinite animated pulse"
+                                                style="font-size: 58px; font-weight: bolder">
+                                                {{prm.Second_label}}</h5>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {%else%}
+                        <audio  src="/static/ding.wav"></audio>
+                        <div class="col-lg-6 h-100">
+                            <div class="row h-10  " style="align-content: center">
+                                <div id="scd_lbl" class="col-lg-12  ">
+                                    {{prm.Second_label|default:""}}
+                                </div>
+
+
+                            </div>
+                            <div class="row h-80 " style="align-content: center">
+                                <div class="col-lg-12">
+                                    <img id="photo" src="/media/{{prm.Product_img}}" alt=" "></div>
+                            </div>
+                            <div class="row h-10 " style="align-content: center">
+
+
+                                <div class="col-lg-12 d-flex justify-content-center  ">
+
+                                    <h5 id="date" style="font-size: 32px;font-weight: bold">
+                                        Od:{{prm.Start_date|date:"j-m-Y"}} Do:{{prm.Stop_date|date:"j-m-Y"}} </h5>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-lg-6 h-100">
+                            <div class="row h-70 " style="align-content: center">
+                                <div class="col-lg-12 d-flex justify-content-center animated tada delay-1s">
+                                    <div id="mn_lbl" style="max-width: 100%"> {{prm.Main_label}}</div>
+                                </div>
+                            </div>
+
+                            <div class="row h-30 " style="align-content: center">
+
+
+                                <div class="col-lg-12  justify-content-center  ">
+
+                                    <div class="card text-white bg-dark animated zoomIn delay-1s"
+                                         style="max-width: 60em;">
+
+                                        <div class="card-body">
+
+                                            <h5 id="price" class="card-title infinite animated pulse"
+                                                style="font-size: 58px; font-weight: bolder">
+                                                {{prm.Price_whole|default:""}}{{prm.Price_sep|default:""}}{{prm.Price_rest|default:""}}
+                                                zł {{prm.Gram_sep|default:""}}
+                                                {{prm.Product_weight|default:""}}</h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        {%endif%}
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+</div>

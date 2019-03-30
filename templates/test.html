@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeply preview</title>
+    <base target="_self">
+    <meta name="description"
+          content="A layout with 2 columns, and the left column is spit into 2 columns which are half the height if the viewport.">
+    <meta name="google" value="notranslate">
+    <link rel="shortcut icon" href="/images/cp_ico.png">
+
+
+    <!--stylesheets / link tags loaded here-->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <style type="text/css">
+        #prom_grid > .row {
+        min-height: 100vh;
+    }
+
+    .flex-fill {
+        flex: 1 1 auto;
+    }
+       .h-10 {
+           height: 10%;
+       }
+
+        .h-80{
+            height: 80%;
+        }
+
+        .h-70{
+            height: 70%;
+        }
+        .h-30{
+            height: 30%;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+
+<div id="prom_grid" class="container-fluid  text-black d-flex justify-content-center">
+    <div class="row flex-fill " style="text-align: center">
+        <div class="col-lg-6 h-100">
+            <div class="row h-10  "style="align-content: center">
+                <div class="col-lg-12  " >
+                   Second LABEL
+                </div>
+            </div>
+            <div class="row h-80 " style="align-content: center">
+                <div class="col-lg-12">
+                   PHOTO
+                </div>
+            </div>
+            <div class="row h-10 "style=" align-content: center">
+                <div class="col-lg-12" >
+                    DATE
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 h-100">
+            <div class="row h-70 "style="align-content: center">
+                <div class="col-lg-12" >
+                    MAIN LABEL
+                </div>
+            </div>
+             <div class="row h-30 "style="align-content: center">
+                <div class="col-lg-12" >
+                    PRICE
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

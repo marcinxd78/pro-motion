@@ -1,0 +1,157 @@
+body{
+     background-image: url("bg8.jpg");
+    background-size:100%;
+
+
+}
+#prom_grid > .row {
+    min-height: 100vh;
+    transform: translate3d(0,0,0);
+
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+
+}
+
+.h-10 {
+    height: 10%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-30 {
+    height: 30%;
+}
+
+#scd_lbl {
+     font-family: 'Baloo Thambi', cursive;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+
+#photo, #photo2 {
+    height: 500px;
+    width: 500px;
+
+
+
+}
+
+#mn_lbl, #mn_lbl2 {
+    font-family:  'Baloo Thambi', cursive;
+    font-weight: 900;
+    font-size: 86px;
+    color: red ;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+
+    -webkit-animation: neon2 1s ease-in-out  ;
+    -moz-animation: neon2 1s ease-in-out  ;
+    animation: neon2 1s ease-in-out ;
+    animation-delay: 1s;
+   -moz-animation-duration:  9s;
+       -moz-animation-delay: 1s;
+    text-shadow: 1px 1px black;
+}
+
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow:
+                1px 1px black,
+                0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px #FFFE1F,
+               0 0 70px #FFFE1F,
+               0 0 80px  #FFFE1F,
+               0 0 100px #FFFE1F,
+               0 0 150px #FFFE1F;
+  }
+  to {
+    text-shadow:
+            1px 1px black,
+                0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #ffffcc,
+               0 0 35px #ffffcc,
+               0 0 40px #ffffcc,
+               0 0 50px #ffffcc,
+               0 0 75px #ffffcc;
+  }
+}
+
+
+@-moz-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  transform: translate3d(0,0,0);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+ transform: translate3d(0,0,0);
+  }
+}
+
+
+#price, #price2 {
+ font-family: 'Baloo Thambi', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+
+}
+
+#date{
+    font-family: 'Baloo Thambi', cursive;
+    color: black;
+}
+
+#rest{
+    font-family: 'Baloo Thambi', cursive;
+    font-weight: lighter;
+    font-size:24px;
+}
+
+audio{
+display: none;
+
+}
+
+
+
+.accelerated {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s ;
+}
+
+
+.carousel{
+  transform: translateZ(0);
+}
