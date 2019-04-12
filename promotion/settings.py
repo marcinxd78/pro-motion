@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['https://pro-motion.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['https://pro-motion.herokuapp.com', 'localhost']
 DEFAULT_CHARSET = 'utf-8'
 
 # Application definition
@@ -117,10 +117,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "my_static"),
+]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'my_static')
-STATICFILES_DIRS = ['my_static',]
+
 #miejsce przechowywania plików statycznych zdjęć
 MEDIA_URL = '/media/'
 
