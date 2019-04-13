@@ -1,3 +1,4 @@
+
 from django.urls import path
 from .views import all_proms
 from django.conf import settings
