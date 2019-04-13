@@ -1,1 +1,1 @@
-web: gunicorn promotion.wsgi --log-file--
+web: gunicorn promotion.wsgi --log-file -
