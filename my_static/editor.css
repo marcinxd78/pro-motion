@@ -43,8 +43,8 @@ body{
 
 
 #photo, #photo2 {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
 
 
 
@@ -53,7 +53,7 @@ body{
 #mn_lbl, #mn_lbl2 {
     font-family:  'Baloo Thambi', cursive;
     font-weight: 900;
-    font-size: 86px;
+    font-size: 120px;
     color: red ;
     text-transform: uppercase;
     display: flex;
