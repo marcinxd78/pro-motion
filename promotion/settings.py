@@ -122,9 +122,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/my_static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "my_static"),
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "my_static"),
+#]
 
 #miejsce przechowywania plików statycznych zdjęć
 MEDIA_URL = '/media/'
