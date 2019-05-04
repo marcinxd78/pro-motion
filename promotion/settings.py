@@ -19,14 +19,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-
+#new
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['46.41.151.91', 'pro-motion.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['dailypromotion.pl', '46.41.151.91', 'pro-motion.herokuapp.com', 'localhost']
 DEFAULT_CHARSET = 'utf-8'
 
 # Application definition
