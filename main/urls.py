@@ -6,5 +6,5 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('promocje/', all_proms )
+    path('', all_proms )
 ]
