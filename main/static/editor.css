@@ -1,6 +1,7 @@
 body{
-     background-image: url("bg8.jpg");
+     background-image: url("bg11.jpg");
     background-size:100%;
+   /* bacground-color: white; */
 
 
 }
@@ -36,7 +37,7 @@ body{
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: bold;
-    color: black;
+    color: #28a745 ;
     text-transform: uppercase;
 
 }
@@ -54,7 +55,7 @@ body{
     font-family:  'Baloo Thambi', cursive;
     font-weight: 900;
     font-size: 120px;
-    color: red ;
+    color: #28a745 ;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -116,8 +117,13 @@ body{
  font-family: 'Baloo Thambi', cursive;
     font-weight: bold;
     text-transform: uppercase;
-    color: red;
+    color:  #FFFE1F;
 
+
+}
+
+#price_bord{
+    border-radius: 15px 50px;
 }
 
 #date{
@@ -129,6 +135,7 @@ body{
     font-family: 'Baloo Thambi', cursive;
     font-weight: lighter;
     font-size:24px;
+    text-shadow: 2px 2px #FF0000;
 }
 
 audio{

@@ -15,7 +15,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-   <script src="//responsivevoice.org/responsivevoice/responsivevoice.js"></script>
+
 
 <link href='//fonts.googleapis.com/css?family=Baloo+Thambi&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -28,22 +28,8 @@
 
 </body>
 
-<script type='text/javascript'>
 
-setInterval(function(  ) { $('audio')[0].play();
- audio.autoplay = true;
- },10000);
 
-</script>
-<script type='text/javascript'>
-  setTimeout(  responsiveVoice.OnVoiceReady = function() {
-
-    responsiveVoice.speak($('#text').text(),  'Polish Male', {
-            pitch: .9,
-        rate: .9,} );
-});
-
-</script>
 <script type='text/javascript'>
 
 
@@ -90,7 +76,7 @@ setInterval(function(  ) { $('audio')[0].play();
 <script>
     setInterval(function () {
         $("#refresh2").load(location.href, "");
-    }, 10000);
+    }, 100000);
 </script>
 
 
